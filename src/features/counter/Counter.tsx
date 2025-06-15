@@ -3,7 +3,7 @@ import {ScrollView, Text, Button, View, StyleSheet, useColorScheme} from 'react-
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import {decrement, increment} from './counterSlice';
 
-export const Counter: React.FC = () => {
+const Counter: React.FC = () => {
   const count = useAppSelector((state) => state.counter.value);
   const dispatch = useAppDispatch();
   const colorScheme = useColorScheme();
@@ -90,3 +90,5 @@ const createStyles = (isDark: boolean) => StyleSheet.create({
     minWidth: 60,
   },
 });
+
+export default Counter;

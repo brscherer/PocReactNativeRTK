@@ -7,10 +7,11 @@
 
 import React from 'react';
 
-import {Counter} from './src/features/counter/Counter';
+// import Counter from './src/features/counter/Counter';
+import Pokemon from './src/features/pokemon/Pokemon';
 
 function App(): React.JSX.Element {
-  return <Counter />;
+  return <Pokemon />;
 }
 
 export default App;
