@@ -5,6 +5,10 @@ import { useGetPokemonByNameQuery } from '../../services/pokemon';
 export default function Pokemon() {
   const { data, error, isLoading } = useGetPokemonByNameQuery('charizard');
 
+  console.log('Pokemon data:', data);
+  console.log('Pokemon error:', error);
+
+
   if (error) {
     return (
       <View style={styles.container}>
